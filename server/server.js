@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 app.use("/api/inngest", serve({ client: inngest, functions }));
 
 // Routes
-app.use("/api/workspaces", protect, workspaceRouter)
+app.use("/api/workspaces", protect, workspaceRouter);
 
 const PORT = process.env.PORT || 5000;
 
