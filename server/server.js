@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import { clerkMiddleware } from "@clerk/express";
 import { inngest, functions } from "./inngest/index.js";
+import { serve } from "inngest/express";
 import workspaceRouter from "./routes/workspaceRoutes.js";
 import { protect } from "./middlewares/authMiddleware.js";
 
